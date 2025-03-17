@@ -2,6 +2,11 @@
 
 This project uses KQL on SecurityEvent logs to detect rare executable downloads or executions from unusual parent processes, simulating malware delivery detection.
 
+
+## Usage
+Run in Azure Sentinel to identify rare .exe or .dll executions from non-standard parents (e.g., PowerShell, cmd.exe) over 7 days. Ideal for spotting malware post-phishing.
+
+Built by Frank Johnson, CompTIA CSAP | CySA+ certified.
 ## Query
 ```kql
 SecurityEvent
